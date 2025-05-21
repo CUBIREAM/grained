@@ -123,7 +123,7 @@ const grained = (ele: string | HTMLElement, opt: GrainedOptions = {}): void => {
     document.body.appendChild(customStyle);
 
     let rule = `background-image: url(${noise});`;
-    rule += 'position: absolute; content: ""; height: 300%; width: 300%; left: -100%; top: -100%;';
+    rule += 'position: absolute; content: ""; height: 300%; width: 300%; left: -100%; top: -100%; pointer-events: none;';
 
     if (options.animate) {
         prefixes.forEach(prefix => {
